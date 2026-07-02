@@ -1,0 +1,4 @@
+interface:
+  display_name: "Price Anomaly Verification"
+  short_description: "Second-pass QA for Exact matches with comparable marketplace prices"
+  default_prompt: "Use $price-anomaly-verification to review Exact product matches for marketplace price divergence."

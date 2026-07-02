@@ -1,0 +1,54 @@
+# Dependencies and package manager caches
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local tool/work directories
+.codex/
+.agents/
+.claude/
+**/.claude/
+_work/
+outputs/
+claude_runs/
+
+# Browser profiles and runtime state
+**/chrome-profile*/
+**/chrome-profile-*/
+**/server-data/
+
+# Secrets and local environment files
+.env
+.env.*
+*.pem
+*.key
+*service*account*.json
+i2o-dev-vertex-ai*.json
+
+# Generated/cache data
+*.jsonl
+*_cache.json
+*_cache.jsonl
+*_results.json
+raw_responses/
+runs/
+uploads/
+
+# Large local datasets and review workbooks
+*.xlsx
+*.xls
+*.csv
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

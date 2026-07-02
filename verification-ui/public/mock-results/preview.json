@@ -1,0 +1,246 @@
+{
+  "all": {
+    "label": "All Results",
+    "rows": [
+      {
+        "row": 1,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Finish, Blanc, 0.46 Ounces (Packaging May Vary) Snowy White Blanc 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Nail Polish, Snowy White, Blanc, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 2,
+        "sourceTitle": "essie Salon-Quality Nail Polish, 8-Free Vegan, Cloudy White, Marshmallow, 0.46 fl oz Marshmallow 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Marshmallow, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 3,
+        "sourceTitle": "essie Salon-Quality Nail Polish, 8-Free Vegan, Sheer Pale Pink, Ballet Slippers, 0.46 fl oz Ballet Slippers 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Nail Polish, Ballet Slippers, Sheer Pale Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 4,
+        "sourceTitle": "Essie #469-Limoscene 13,5 Ml",
+        "targetTitle": "essie Salon Quality 8 Free Vegan Nail Polish, Sheer Light Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 5,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Finish, Vanity Fairest, 0.46 fl. oz. Vanity Fairest 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie 8-Free Vegan Nail Polish, Vanity Fairest, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Same brand/product family, but title details differ."
+      },
+      {
+        "row": 6,
+        "sourceTitle": "essie Nail Polish, Salon-Quality, 8-free Vegan, Finish, Mademoiselle, 0.46 Ounces (Packaging May Vary) Sheer Pink Mademoiselle 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Mademoiselle, Sheer Pale Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 7,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Soft Pastel Pink, Fiji, 0.46 Ounce Fiji 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Nail Polish, Fiji, Pastel Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 8,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Sheer Pink, Sugar Daddy, 0.46 Ounce Sugar Daddy 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Sheer Light Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      }
+    ]
+  },
+  "not_match": {
+    "label": "Not a Match",
+    "rows": [
+      {
+        "row": 1,
+        "sourceTitle": "Essie #469-Limoscene 13,5 Ml",
+        "targetTitle": "essie Salon Quality 8 Free Vegan Nail Polish, Sheer Light Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 2,
+        "sourceTitle": "",
+        "targetTitle": "essie Salon Quality Nail Polish, Wild Nude, Light Tan, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different brand or product line."
+      },
+      {
+        "row": 3,
+        "sourceTitle": "essie Nail Polish, Summer 2020 Sunny Business Collection, Blushing Violet Nail Color With A Cream Finish, suits you swell, 0.46 Fl Ounce",
+        "targetTitle": "essie Nail Polish, Suits You Well, Pink-Purple, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 4,
+        "sourceTitle": "Essie Nail Enamel Slumber Party-on, 0.46Fl Oz",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Bright Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 5,
+        "sourceTitle": "essie NAIL COLOR AMUSE ME",
+        "targetTitle": "essie Salon Quality 8 Free Vegan Nail Polish, Denim Blue, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 6,
+        "sourceTitle": "essie Nail Polish, Salon-Quality Muted Neutral Khaki Nail Polish, Vegan, Natural Connection, 0.46 fl oz 0.46 Fl Oz (Pack of 1) 31 NATURAL CONNECTION",
+        "targetTitle": "essie Nail Polish, Willow in the Wind, Vibrant Green, 0.46 fl oz Bottle",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 7,
+        "sourceTitle": "Essie Salon-Quality Nail Polish, 8-Free Vegan, Cool Grayish Lavender, In Pursuit Of Craftiness, 0.46 fl oz In Pursuit of Craftiness 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "ESSIE Glossy High - Shiny Nail Polish (Fall Collection)",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      },
+      {
+        "row": 8,
+        "sourceTitle": "essie Gel Couture Nail Polish, Long Lasting Purple Nail Polish, Vegan, Strut With It, 0.46 fl oz Strut With It 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "Essie Couture #182 - Strut With It",
+        "matchStatus": "Not a Match",
+        "matchJustification": "Different product, variant, shade, or formulation."
+      }
+    ]
+  },
+  "exact": {
+    "label": "Exact Match",
+    "rows": [
+      {
+        "row": 1,
+        "sourceTitle": "Essie Salon-Quality Nail Polish, 8-Free Vegan, Muted Green, Turquoise And Caicos, 0.46 fl oz Turquoise And Caicos 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Nail Polish, Turquoise and Caicos, Muted Green, 0.46 fl. oz Bottle",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 2,
+        "sourceTitle": "essie Nail Care, 8-Free Vegan, Quick-E Drops, fast-drying drops, nail polish finisher, 0.46 fl oz Quick-E Drying Drops",
+        "targetTitle": "essie Nail Treatment Polish, Quick E Drops, Clear, 0.46 fl oz Bottle",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 3,
+        "sourceTitle": "essie Salon-Quality Nail Polish, 8-Free Vegan, Bright Red, She's Pampered, 0.46 fl oz",
+        "targetTitle": "essie Nail Polish, She's Pampered, Red, 0.46 fl oz Bottle",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 4,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Finish, Minimalistic, 0.46 fl. oz.",
+        "targetTitle": "essie nail polish, minimalistic, pink sheer nail polish, 0.46 fl. oz.",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 5,
+        "sourceTitle": "Essie Gel Couture Long-Lasting Nail Polish, 8-Free Vegan, Sheer Nude Pink, Fairy Tailor, 0.46 fl oz Fairy Tailor 0.46 Fl Oz",
+        "targetTitle": "gel couture by essie gel-like nail polish, vegan, pink, fairy tailor, 0.46 fl oz",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 6,
+        "sourceTitle": "Essie Gel Couture Long-Lasting Nail Polish, 8-Free Vegan, Sheer Pink, Sheer Fantasy, 0.46 fl oz Sheer Fantasy 0.46 Fl Oz",
+        "targetTitle": "gel couture by essie gel-like nail polish, vegan, pink, sheer fantasy, 0.46 fl oz",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 7,
+        "sourceTitle": "essie Gel Couture Nail Polish, Long-Lasting Scarlet Red Nail Polish, Vegan, Rock The Runway, 0.46 fl oz Red 0.46 Fl Oz",
+        "targetTitle": "gel couture by essie gel-like nail polish, vegan, red, rock the runway, 0.46 fl oz",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      },
+      {
+        "row": 8,
+        "sourceTitle": "essie gel couture, gel-like nail polish, longwear, vegan formula, pink, the it-factor, 0.46 fl oz",
+        "targetTitle": "essie Gel Couture Nail Polish, Bright Pink, The It-Factor, 0.46 fl oz Bottle",
+        "matchStatus": "Exact",
+        "matchJustification": ""
+      }
+    ]
+  },
+  "equivalent": {
+    "label": "Equivalent Match",
+    "rows": [
+      {
+        "row": 1,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Finish, Blanc, 0.46 Ounces (Packaging May Vary) Snowy White Blanc 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Nail Polish, Snowy White, Blanc, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 2,
+        "sourceTitle": "essie Salon-Quality Nail Polish, 8-Free Vegan, Cloudy White, Marshmallow, 0.46 fl oz Marshmallow 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Marshmallow, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 3,
+        "sourceTitle": "essie Salon-Quality Nail Polish, 8-Free Vegan, Sheer Pale Pink, Ballet Slippers, 0.46 fl oz Ballet Slippers 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Nail Polish, Ballet Slippers, Sheer Pale Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 4,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Finish, Vanity Fairest, 0.46 fl. oz. Vanity Fairest 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie 8-Free Vegan Nail Polish, Vanity Fairest, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Same brand/product family, but title details differ."
+      },
+      {
+        "row": 5,
+        "sourceTitle": "essie Nail Polish, Salon-Quality, 8-free Vegan, Finish, Mademoiselle, 0.46 Ounces (Packaging May Vary) Sheer Pink Mademoiselle 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Mademoiselle, Sheer Pale Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 6,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Soft Pastel Pink, Fiji, 0.46 Ounce Fiji 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Nail Polish, Fiji, Pastel Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 7,
+        "sourceTitle": "essie Nail Polish, Glossy Shine Sheer Pink, Sugar Daddy, 0.46 Ounce Sugar Daddy 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Salon Quality Vegan Nail Polish, Sheer Light Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      },
+      {
+        "row": 8,
+        "sourceTitle": "essie Nail Polish, Salon-Quality Pink Nail Polish, Vegan, Muchi Muchi, 0.46 fl oz Muchi Muchi 0.46 Fl Oz (Pack of 1)",
+        "targetTitle": "essie Nail Polish, Muchi Muchi, Mid-Tone Pink, 0.46 fl oz Bottle",
+        "matchStatus": "Equivalent",
+        "matchJustification": "Different size or pack count between source and target."
+      }
+    ]
+  }
+}

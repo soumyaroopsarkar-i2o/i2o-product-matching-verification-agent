@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Verification"
+  short_description: "Verify matched product spreadsheet rows"
+  default_prompt: "Use $product-verification to verify matched products in this spreadsheet."

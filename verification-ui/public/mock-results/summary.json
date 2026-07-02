@@ -1,0 +1,26 @@
+{
+  "total": 3031,
+  "files": {
+    "all": "all_results.csv",
+    "exact": "exact_matches.csv",
+    "equivalent": "equivalent_matches.csv",
+    "not_match": "not_a_match.csv"
+  },
+  "metrics": [
+    {
+      "key": "not_match",
+      "label": "Not a Match",
+      "value": 1106
+    },
+    {
+      "key": "exact",
+      "label": "Exact Match",
+      "value": 696
+    },
+    {
+      "key": "equivalent",
+      "label": "Equivalent Match",
+      "value": 1229
+    }
+  ]
+}
