@@ -6,14 +6,14 @@ The full verification agent is a workbook-based product matching verification pi
 
 The production goal is to preserve the original workbook data, add a small set of verification columns, and run the complete verification flow from one wrapper command.
 
-The current implementation is scripts-only. UI integration is intentionally separate.
+The implementation is organized into app, agent, workflow, data, and utility folders. The React UI lives in `apps\verification-ui`, while the deterministic pipeline entry points live in `workflows\verification`.
 
 ## Entry Point
 
 The single production trigger is:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_full_verification_flow.ps1 `
+powershell -NoProfile -ExecutionPolicy Bypass -File workflows\verification\run_full_verification_flow.ps1 `
   -InputWorkbook <input.xlsx> `
   -BatchSize 100
 ```
@@ -21,7 +21,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_full_verificatio
 For a limited test run:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_full_verification_flow.ps1 `
+powershell -NoProfile -ExecutionPolicy Bypass -File workflows\verification\run_full_verification_flow.ps1 `
   -RowLimit 100 `
   -BatchSize 100
 ```
@@ -29,7 +29,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_full_verificatio
 If `InputWorkbook` is omitted, the wrapper uses:
 
 ```text
-loreal_wmt_attributes\loreal_wmt_attributes\lorealpi_product_verification_input.xlsx
+data\loreal-wmt-attributes\lorealpi_product_verification_input.xlsx
 ```
 
 ## High-Level Flow
@@ -72,7 +72,7 @@ Stage 1 verifies whether each pairwise source-target row represents the same pro
 | Stage 1 Agent runner | Calls the local Agent CLI, caches raw responses, parses results, and merges Stage 1 output. |
 | Stage 1 response parser | Validates Agent JSON and converts compact status codes to normalized labels. |
 | Stage 1 workbook merger | Appends or updates `Match Status` and `Match Justification`. |
-| `product-verification\SKILL.md` | First-pass product verification rules. |
+| `agents\product-verification\SKILL.md` | First-pass product verification rules. |
 
 ### Agent Input Contract
 
@@ -114,9 +114,9 @@ Stage 2A does not perform UPC marketplace group analysis. It only works on the p
 
 | Script | Responsibility |
 | --- | --- |
-| `scripts\prepare_price_pair_batches.py` | Selects only Stage 1 Exact rows and writes compact Stage 2A prompts. |
-| `scripts\parse_price_pair_response.py` | Parses compact row-index output from the Agent. |
-| `scripts\merge_price_pair_results.py` | Writes `reclassified_status = Equivalent` only for returned row indexes. |
+| `workflows\verification\prepare_price_pair_batches.py` | Selects only Stage 1 Exact rows and writes compact Stage 2A prompts. |
+| `workflows\verification\parse_price_pair_response.py` | Parses compact row-index output from the Agent. |
+| `workflows\verification\merge_price_pair_results.py` | Writes `reclassified_status = Equivalent` only for returned row indexes. |
 | Stage 2A price anomaly skill | Stage 2A pairwise price anomaly rules. |
 
 ### Hard Gate 1: Exact Rows Only
@@ -216,9 +216,9 @@ Stage 2B is not responsible for deciding whether the original pair is equivalent
 
 | Script | Responsibility |
 | --- | --- |
-| `scripts\prepare_marketplace_outlier_batches.py` | Selects all Equivalent rows from Stage 1 and Stage 2A, groups the full workbook by source and target UPC, builds marketplace price observations, and filters to UPC groups with more than 2 marketplaces with usable price data. |
-| `scripts\parse_marketplace_outlier_response.py` | Parses compact marketplace anomaly output from the Agent. |
-| `scripts\merge_marketplace_outlier_results.py` | Writes `marketplace_having_anomaly` and `price anomaly justification`. |
+| `workflows\verification\prepare_marketplace_outlier_batches.py` | Selects all Equivalent rows from Stage 1 and Stage 2A, groups the full workbook by source and target UPC, builds marketplace price observations, and filters to UPC groups with more than 2 marketplaces with usable price data. |
+| `workflows\verification\parse_marketplace_outlier_response.py` | Parses compact marketplace anomaly output from the Agent. |
+| `workflows\verification\merge_marketplace_outlier_results.py` | Writes `marketplace_having_anomaly` and `price anomaly justification`. |
 
 ### Stage 2B Eligibility Gates
 
@@ -421,7 +421,7 @@ Any failed Python command, parser, merge, or Agent call stops the full run.
 2. Confirm the workbook includes the source and target product fields expected by Stage 1.
 3. Confirm source and target UPC fields are populated, because Stage 2B uses UPCs as the marketplace grouping key.
 4. Confirm the local Agent CLI is authenticated and callable.
-5. Run `scripts\run_full_verification_flow.ps1`.
+5. Run `workflows\verification\run_full_verification_flow.ps1`.
 6. Monitor console output for each stage.
 7. Review `run_summary.json` after completion.
 8. Review each stage `*.summary.json` for row counts and missing batches.
@@ -480,3 +480,5 @@ This split improves reproducibility and keeps workbook writes deterministic.
 - Stage 2B requires more than 2 marketplaces with usable price data.
 - Stage 2B does not call the Agent for insufficient marketplace coverage.
 - The current orchestration is script-based; UI integration is not part of this flow yet.
+
+
