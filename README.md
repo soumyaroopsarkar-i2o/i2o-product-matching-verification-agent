@@ -28,6 +28,22 @@ The workflow defaults to `data/loreal-wmt-attributes/lorealpi_product_verificati
 
 ## UI
 
+Double-click `start-verification-ui.bat` from the repository root to install missing UI dependencies, start the backend, start the frontend, and open the app in your browser.
+
+The app opens at:
+
+```text
+http://127.0.0.1:5173
+```
+
+Backend health check:
+
+```text
+http://127.0.0.1:5175/api/health
+```
+
+Manual startup is also available:
+
 ```powershell
 cd apps\verification-ui
 pnpm install
