@@ -28,7 +28,9 @@ The workflow defaults to `data/loreal-wmt-attributes/lorealpi_product_verificati
 
 ## UI
 
-Double-click `start-verification-ui.bat` from the repository root to install missing UI dependencies, start the backend, start the frontend, and open the app in your browser.
+Double-click `Open Verification Agent.bat` from the repository root to install missing UI dependencies, start the backend, start the frontend, and open the app in your browser.
+
+The legacy `start-verification-ui.bat` launcher remains available and does the same startup work.
 
 The app opens at:
 

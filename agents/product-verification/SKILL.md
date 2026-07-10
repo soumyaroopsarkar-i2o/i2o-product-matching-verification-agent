@@ -60,13 +60,17 @@ Target product columns 16-32:
 
 ## Match Rules
 
-Review each product pair manually using judgment. Use all available evidence: titles, brands, UPCs, ASINs, model/product IDs, descriptions, feature bullets, ingredients, categories, URLs, and image URLs. Use web search or browser tools when the row is ambiguous or the product details need confirmation.
+Review each product pair manually using judgment. Use all available evidence: titles, brands, UPCs, ASINs, model/product IDs, descriptions, feature bullets, ingredients, categories, URLs, image URLs, price, currency, and seller context.
+
+Before confirming any row, use the browser tool to visit each available `Source_URL` and `Target_URL`. Inspect the live product pages for title, brand, model, size/count, variant, condition, seller/listing context, and product images. Use the row evidence plus the browser findings for the final decision. If a URL is unavailable, inaccessible, or clearly not a product page, continue with the available evidence and do not treat the missing page as proof of a match.
 
 Assign `Exact` when the source and target are the same product and the quantity, count, weight, volume, pack size, shade, formulation, and variant are also the same.
 
 Assign `Equivalent` when the source and target are the same product but quantity, count, weight, volume, pack size, or bundle size differs.
 
 Assign `Not a Match` when the target is a different product, different variant, different shade/color, different formulation, different scent/flavor, different model, incompatible category, or any other mismatch.
+
+Strict condition rule: classify the row as `Not a Match` if either listing is refurbished, renewed, rebuilt, reconditioned, open-box, used, pre-owned, or otherwise not a new retail product. This applies even when the brand, model, UPC, or visible product identity otherwise matches.
 
 ## Price Anomaly Rule
 
@@ -79,7 +83,7 @@ Skip the price anomaly check when either price is missing, zero, or in a differe
 ## Workflow
 
 1. Open the workbook and identify the sheet or sheets containing the product match rows.
-2. For each row, compare source and target details manually. Do not write a program that makes the matching decisions.
+2. For each row, visit the available source and target URLs with the browser tool before confirming the classification.
 3. Mark `Exact`, `Equivalent`, or `Not a Match`.
 4. Leave `Match Justification` blank for `Exact`.
 5. For `Equivalent`, explain the quantity or price difference concisely.
@@ -95,4 +99,3 @@ Keep justifications short and specific:
 - `Different shade: source is Soft Black, target is Medium Brown.`
 - `Different formulation: source is shampoo, target is conditioner.`
 - `Different product line despite same brand.`
-

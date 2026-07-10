@@ -82,7 +82,7 @@ def make_instruction(
 
 You are running one batch of a product verification job.
 
-Important: do not run tools, do not read the workbook, and do not write files for this batch. The workbook rows you need are already included below as JSON. Your only job is to reason over each row and return valid JSON.
+Important: do not read the workbook and do not write files for this batch. The workbook rows you need are already included below as JSON. Use the browser tool to visit each available Source_URL and Target_URL before confirming each row, then return valid JSON.
 
 Audit paths:
 - Skill file: {skill_path}
